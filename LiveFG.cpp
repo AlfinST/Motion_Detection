@@ -17,7 +17,7 @@ void extract_frames()
 	try{
 
 		//open the video file
-  		VideoCapture cap("http://188.192.97.168:80/mjpg/video.mjpg?COUNTER");//rtmp://185.55.24.19:1935/live/66-20180704052946869406.stream"); // open the video file
+  		VideoCapture cap("");// Add source here EXAMPLE: http://103.20.189.107:80/mjpg/video.mjpg?COUNTER // open the video file
   		if(!cap.isOpened())  // check if we succeeded
   			CV_Error( -2 ,"Can not open Video file");
 	    int frameNumber=0,fc=100;
