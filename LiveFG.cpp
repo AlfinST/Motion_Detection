@@ -46,6 +46,6 @@ int main( int argc, char** argv )
 {
 	//to extract
 	extract_frames();
-	cout<<"Frames Stored\n";
+	cout<<"\nFrames Stored\n";
 	return 0;
 }
