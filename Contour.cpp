@@ -82,7 +82,7 @@ int main( int argc, char** argv )
        Scalar color = Scalar( 0, 255, 0 );
        //drawContours( drawing, contours_poly, i, color, 1, 8, vector<Vec4i>(), 0, Point() );
        area=boundRect[i].width * boundRect[i].height;
-       if(area>300)
+       if(area >   )             ////////////////////////////////////////////////////////////////////////////////////MINIMUM_SIZE_OF_OBJECT_SET_HERE/////////////////////////////////////////////////////
        {
         rectangle( back1, boundRect[i].tl(), boundRect[i].br(), color, FILLED, 8, 0 );
        }
