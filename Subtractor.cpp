@@ -46,7 +46,7 @@ void help()
 
 
 
-int main(int argc, char* argv[])
+int main (int argc, char* argv[])
 {
     //print help information
     help();
@@ -215,14 +215,13 @@ void processImages(char* fistFrameFilename) {
         int n=filePath.length();
         char charName[n+1];
         strcpy(charName,filePath.c_str());
-
         
         stat( charName , &st);
         size = st.st_size;
         
         
-        cout<<filePath<<"::"<<size/1024<<endl;
-        if (size/1024<650)
+        cout << filePath << "::" << size/1024<<endl;
+        if (size / 1024<650)
         {
 
         string filePath2 = outputDir +"Filter/"+ to_string(static_cast<long long>(frameNumber-1))+ ".jpg";
